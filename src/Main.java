@@ -13,7 +13,10 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
+
+
 
     private static void task1() {
         int[] arr = new int[30];
@@ -52,6 +55,12 @@ public class Main {
             System.out.println(average);
 
         }
+    private static void task4() {
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--){
+            System.out.print(reverseFullName[i]);
+        }
+    }
 }
 
 

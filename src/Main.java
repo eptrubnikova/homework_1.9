@@ -41,8 +41,17 @@ public class Main {
     }
 
     private static void task3() {
+        int[] arr = new int[30];
+        arr = generateRandomArray();
         int average = 0;
-    }
+        int sum = 0;
+        for (int index = 0; index < arr.length; index++) {
+            sum += arr[index];}
+            average = sum/30;
+
+            System.out.println(average);
+
+        }
 }
 
 

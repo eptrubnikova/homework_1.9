@@ -1,13 +1,5 @@
 public class Main {
 
-    public static void main(String[] args) {
-        int[] arr = generateRandomArray();
-        task1();
-        task2();
-
-    }
-
-
     public static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
@@ -17,6 +9,12 @@ public class Main {
         return arr;
     }
 
+    public static void main(String[] args) {
+        task1();
+        task2();
+        task3();
+    }
+
     private static void task1() {
         int[] arr = new int[30];
         arr = generateRandomArray();
@@ -24,8 +22,8 @@ public class Main {
         for (int index = 0; index < arr.length; index++) {
             sum += arr[index];
         }
-
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
+
     }
 
     private static void task2() {
@@ -35,12 +33,19 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > max) {
                 max = arr[i];
+
                 System.out.println(max);
+                break;
             }
         }
     }
 
-
+    private static void task3() {
+        int average = 0;
+    }
 }
+
+
+
 
 
